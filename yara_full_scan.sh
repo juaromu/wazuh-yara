@@ -39,7 +39,7 @@ do
   fi
   done
 done
-# Execute YARA scan on .sh files, all locations
+# Execute YARA scan on files types, all locations
 for e in "${file_extenstions_to_scan[@]}"
 do
   for f1 in $( find / -type f | grep -F $e ); do
